@@ -1,0 +1,17 @@
+{
+"asset":{
+  "id":2000,"has_format":"hls","time_unit":90000,"wts":1396441111,"components":[
+    {"group":"common","segment_size":360000,"variants":[
+        {"manifest":"var256/playlist.m3u8","segments_per_dir":0,"template":"seg%lu.ts","bitrate":256000}
+        ,{"manifest":"var386/playlist.m3u8","segments_per_dir":0,"template":"seg%lu.ts","bitrate":386000}
+        ,{"manifest":"var500/playlist.m3u8","segments_per_dir":0,"template":"seg%lu.ts","bitrate":500000}
+        ,{"manifest":"var768/playlist.m3u8","segments_per_dir":0,"template":"seg%lu.ts","bitrate":768000}
+        ,{"manifest":"var1000/playlist.m3u8","segments_per_dir":0,"template":"seg%lu.ts","bitrate":1000000}
+        ,{"manifest":"var1600/playlist.m3u8","segments_per_dir":0,"template":"seg%lu.ts","bitrate":1600000}
+        ,{"manifest":"var2000/playlist.m3u8","segments_per_dir":0,"template":"seg%lu.ts","bitrate":2000000}
+        ]
+      }
+    ]
+  }
+ 
+}
