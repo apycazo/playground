@@ -1,0 +1,55 @@
+{
+"asset":{
+  "id":2000,"asset_id":"2000","asset_path":"/opt/media/adaptive/ads/xbox_hls","has_format":"hls","live":0,"dur":30330,"seq_useorig":1,"time_unit":90000,"wts":1441901851,"components":[
+    {"group":"common","segment_size":360000,"variants":[
+        {"manifest":"var256000/playlist.m3u8","segments_per_dir":0,"template":"seg%lu.ts","bitrate":256000,"es":[
+            {"pid":256,"type":27,"br":112116,"gop_us":833333,"width":720,"height":576,"sps":"AAAAAWdkAB6syHAtBJv/AEAALRAAAAMAEAAAAwPA8WLZ4AA=","pps":"AAAAAWjpuyyL"}
+            ,{"pid":257,"type":15,"br":65629,"freq":48000,"protection_absent":1,"audconf":"EZA="}
+            ]
+          }
+        ,{"manifest":"var386000/playlist.m3u8","segments_per_dir":0,"template":"seg%lu.ts","bitrate":386000,"es":[
+            {"pid":256,"type":27,"br":109381,"gop_us":833333,"width":720,"height":576,"sps":"AAAAAWdkAB6syHAtBJv/AEAALRAAAAMAEAAAAwPA8WLZ4AA=","pps":"AAAAAWjpuyyL"}
+            ,{"pid":257,"type":15,"br":65629,"freq":48000,"protection_absent":1,"audconf":"EZA="}
+            ]
+          }
+        ,{"manifest":"var500000/playlist.m3u8","segments_per_dir":0,"template":"seg%lu.ts","bitrate":500000,"es":[
+            {"pid":256,"type":27,"br":128523,"gop_us":833333,"width":720,"height":576,"sps":"AAAAAWdkAB6syHAtBJv/AEAALRAAAAMAEAAAAwPA8WLZ4AA=","pps":"AAAAAWjpuyyL"}
+            ,{"pid":257,"type":15,"br":65629,"freq":48000,"protection_absent":1,"audconf":"EZA="}
+            ]
+          }
+        ,{"manifest":"var768000/playlist.m3u8","segments_per_dir":0,"template":"seg%lu.ts","bitrate":768000,"es":[
+            {"pid":256,"type":27,"br":181847,"gop_us":833333,"width":720,"height":576,"sps":"AAAAAWdkAB6syHAtBJv/AEAALRAAAAMAEAAAAwPA8WLZ4AA=","pps":"AAAAAWjpuyyL"}
+            ,{"pid":257,"type":15,"br":65629,"freq":48000,"protection_absent":1,"audconf":"EZA="}
+            ]
+          }
+        ,{"manifest":"var1000000/playlist.m3u8","segments_per_dir":0,"template":"seg%lu.ts","bitrate":1000000,"es":[
+            {"pid":256,"type":27,"br":214661,"gop_us":833333,"width":720,"height":576,"sps":"AAAAAWdkAB6syHAtBJv/AEAALRAAAAMAEAAAAwPA8WLZ4AA=","pps":"AAAAAWjpuyyL"}
+            ,{"pid":257,"type":15,"br":65629,"freq":48000,"protection_absent":1,"audconf":"EZA="}
+            ]
+          }
+        ,{"manifest":"var1600000/playlist.m3u8","segments_per_dir":0,"template":"seg%lu.ts","bitrate":1600000,"es":[
+            {"pid":256,"type":27,"br":257047,"gop_us":833333,"width":720,"height":576,"sps":"AAAAAWdkAB6syHAtBJv/AEAALRAAAAMAEAAAAwPA8WLZ4AA=","pps":"AAAAAWjpuyyL"}
+            ,{"pid":257,"type":15,"br":65629,"freq":48000,"protection_absent":1,"audconf":"EZA="}
+            ]
+          }
+        ,{"manifest":"var2000000/playlist.m3u8","segments_per_dir":0,"template":"seg%lu.ts","bitrate":2000000,"es":[
+            {"pid":256,"type":27,"br":334981,"gop_us":833333,"width":720,"height":576,"sps":"AAAAAWdkAB6syHAtBJv/AEAALRAAAAMAEAAAAwPA8WLZ4AA=","pps":"AAAAAWjpuyyL"}
+            ,{"pid":257,"type":15,"br":65629,"freq":48000,"protection_absent":1,"audconf":"EZA="}
+            ]
+          }
+        ]
+      ,"nseg":8,"segidx":0,"segments":[
+        {"wts":1441901851,"t":126000,"seq":0,"aus":"AQACAAAB7DACAgAB/CACAAADESgCAAAENiACAgAD+iACAAAFWxgCAgAFgCACAAAGgBACAgAG4KA="}
+        ,{"wts":1441901855,"t":501000,"seq":1,"aus":"AQEJAgAAB6UIAgIACEEgAgAACMoAAgAACe74AgIACb+gAgAACxPwAgIAC00gAgAADDjoAgIADLUg"}
+        ,{"wts":1441901859,"t":876000,"seq":2,"aus":"AQESAgAADV3gAgAADoLYAgIADjsgAgAAD6fQAgIAD/WgAgAAEMzIAgAAEfHAAgIAEZmg"}
+        ,{"wts":1441901864,"t":1251000,"seq":3,"aus":"AQEaAgAAExa4AgIAExCgAgAAFDuwAgAAFWCoAgIAFOGgAgAAFoWgAgIAFmegAgAAF6qYAgIAF/Ug"}
+        ,{"wts":1441901868,"t":1626000,"seq":4,"aus":"AQEjAgAAGM+QAgIAGVWgAgAAGfSIAgAAGxmAAgIAGsygAgAAHD54AgIAHFKgAgAAHWNwAgIAHcmg"}
+        ,{"wts":1441901872,"t":2001000,"seq":5,"aus":"AQEsAgAAHohoAgAAH61gAgIAH6IgAgAAINJYAgIAIS+gAgAAIfdQAgIAIp8gAgAAIxxI"}
+        ,{"wts":1441901876,"t":2376000,"seq":6,"aus":"AQE0AgAAJEFAAgIAJA6gAgAAJWY4AgIAJY0gAgAAJoswAgIAJvUgAgAAJ7AoAgAAKNUgAgIAKHOg"}
+        ,{"wts":1441901880,"t":2751000,"seq":7}
+        ]
+      }
+    ]
+  }
+ 
+}
