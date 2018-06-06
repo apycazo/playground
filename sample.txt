@@ -3,10 +3,11 @@ public class Test {
 	Logger log = LoggerFactory.getLogger(Test.class);
 
 	public static void main (String [] args) {
-		log.info("Initial sources");
+		report();
 	}
 
-	public static void report () {
+	public static void report () 
+	{
 		log.info("report");
 	}
 }
