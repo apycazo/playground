@@ -1,6 +1,12 @@
 public class Test {
 
+	Logger log = LoggerFactory.getLogger(Test.class);
+
 	public static void main (String [] args) {
 		log.info("Initial sources");
+	}
+
+	public static void report () {
+		log.info("report");
 	}
 }
