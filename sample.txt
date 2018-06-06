@@ -1,7 +1,7 @@
 public class Test {
+	// initial sources
 
 	Logger log = LoggerFactory.getLogger(Test.class);
-	// initial sources
 
 	public static void main (String [] args) {
 		report();
