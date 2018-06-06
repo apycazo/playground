@@ -4,11 +4,11 @@ public class Test {
 	Logger log = LoggerFactory.getLogger(Test.class);
 
 	public static void main (String [] args) {
-		report();
+		report("App started");
 	}
 
-	public static void report () 
+	public static void report (String msg) 
 	{
-		log.info("report");
+		log.info("reporting: {}", msg );
 	}
 }
