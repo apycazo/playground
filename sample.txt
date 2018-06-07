@@ -1,3 +1,5 @@
+package es.test;
+
 public class Test {
 	// initial sources
 
