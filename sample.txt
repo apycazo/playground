@@ -1,10 +1,19 @@
+// This is just a sample class
 public class Test {
-	// initial sources
 
+	// Application logs
 	Logger log = LoggerFactory.getLogger(Test.class);
 
-	public static void main (String [] args) {
+	// main app
+	public static void main (String [] args) 
+	{
 		report("App started");
+	}
+
+	// custom utils
+	public static void report ()
+	{
+		report(Instant.now().timestamp);
 	}
 
 	public static void report (String msg) 
