@@ -1,6 +1,25 @@
 # Playground
+Updated reference sources.
 
-This is a git test repo, and a previous holder for the reference wiki.
+## Modules 
+* **snippets**: Short code examples on specific features.
 
-**Note**: This repository is pending deletion when all data is moved.
+----
+
+## To be done
+* **spring-rest**
+* **spring-retry**
+* **spring-cache**
+* **jersey**
+* **micronaut**
+* **hibernate**
+* **javalin**
+* **jooq**
+* **openfeign**
+* **derby**
+* **kotlin**
+* **gradle-plugin**
+* **cucumber**
+* **mockito**
+
 
