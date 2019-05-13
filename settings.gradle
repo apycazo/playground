@@ -2,4 +2,5 @@ rootProject.name = 'playground'
 // modules
 include 'playground-snippets'
 include 'playground-kotlin'
+include 'playground-spring-rest'
 

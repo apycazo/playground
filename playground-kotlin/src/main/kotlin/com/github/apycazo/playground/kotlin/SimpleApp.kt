@@ -17,7 +17,16 @@ fun main(args: Array<String>) {
   println ("- Offset 2 over 10 returns: ${offset(2).invoke(10)}")
   println ("- Data class get method: ${User("10", "john").name}")
   println ("- Data class get method: ${User("10").name}")
+  dataStructures()
   vars()
+  val record = Record("1", null)
+  println ("- Ir record valid? ${record.valid()}")
+  record.value = "test"
+  println ("- Ir record valid? ${record.valid()}")
+  val array = arrayOf("one", "two")
+  for (i in array) {
+    println ("- Value in array: $i")
+  }
 }
 
 // simple function syntax
@@ -33,7 +42,7 @@ fun increment(value:Int, delta:Int = 1): Int {
   return value + delta
 }
 
-// when an argument with a default value precedes one without it, it must be called using the name
+// when an argument with a default value precedes one without it, it must be called using the param name
 fun addDelta(delta:Int = 1, value:Int): Int {
   return value + delta
 }
@@ -57,6 +66,32 @@ fun controlStructures():Int {
     }
   }
   return count
+}
+
+fun dataStructures() {
+  // structure declaration
+  val stringArray = arrayOf("a", "b")
+  println("- Array of strings: ${stringArray.joinToString(separator = ", ", prefix = "[", postfix = "]")}")
+  val immutableList = listOf("a", "b")
+  println("- Immutable list of strings: ${immutableList.joinToString(separator = ", ", prefix = "[", postfix = "]")}")
+  val mutableList = mutableListOf("a", "b")
+  mutableList.add("c")
+  println("- Mutable list of strings: ${mutableList.joinToString(separator = ", ", prefix = "[", postfix = "]")}")
+  val setOfStrings = setOf("a", "b")
+  println("- Set of strings: ${setOfStrings.joinToString(separator = ", ", prefix = "[", postfix = "]")}")
+  val mapOfStrings = mapOf("a" to "first", "b" to "second")
+  println("- Map of strings (keys): ${mapOfStrings.keys.joinToString(separator = ", ", prefix = "[", postfix = "]")}")
+  println("- Map of strings (values): ${mapOfStrings.values.joinToString(separator = ", ", prefix = "[", postfix = "]")}")
+  // iterators
+  stringArray.forEach { v -> println ("-   Value: $v") }
+  // safe accessor
+  val level1 = Nested("john")
+  println ("- Level 2 access (value is null): ${level1.next?.name ?: "not set"}")
+  level1.next = Nested("mike")
+  println ("- Level 2 access (value is valid): ${level1.next?.name ?: "not set"}")
+  var optional:String? = null
+  println ("- IsNullOrEmpty over null string returns: ${optional.isNullOrEmpty()}")
+  println ("- Value initialization can be delayed, like: ${DelayedInit("this way").init().getUserName()}")
 }
 
 // variable types
@@ -106,3 +141,28 @@ fun offset (delta: Int): (Int) -> Int {
 
 // data classes are simple!
 data class User(val id:String, var name:String = "")
+
+// sample pojo equivalent
+data class Record(val id:String, var value:String?) {
+  fun valid():Boolean {
+    return value != null && value != ""
+  }
+}
+
+data class Nested(val name:String, var next:Nested? = null)
+
+// We can use lateinit to have an attribute we want to init later, but not to be null
+class DelayedInit(private val value:String) {
+
+  private lateinit var user:User
+
+  fun init():DelayedInit {
+    user = User("1", value)
+    return this
+  }
+
+  fun getUserName():String {
+    return user.name
+  }
+
+}
