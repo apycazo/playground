@@ -35,6 +35,7 @@ dependencies {
     "io.micronaut:micronaut-inject:$micronautVersion",
     "io.micronaut:micronaut-runtime:$micronautVersion",
     "io.micronaut:micronaut-http-server-netty:$micronautVersion",
+    "io.micronaut:micronaut-management:$micronautVersion",
     "io.micronaut:micronaut-validation:$micronautVersion")
   testAnnotationProcessor "io.micronaut:micronaut-inject-java:$micronautVersion"
   testImplementation(
