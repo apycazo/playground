@@ -3,4 +3,5 @@ rootProject.name = 'playground'
 include 'playground-snippets'
 include 'playground-kotlin'
 include 'playground-spring-rest'
+include 'playground-micronaut-rest'
 

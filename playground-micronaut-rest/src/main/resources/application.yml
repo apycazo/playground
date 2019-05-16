@@ -1,0 +1,7 @@
+micronaut:
+  application.name: micronaut-rest
+  server.port: 8181
+
+app:
+  author: andres picazo
+  version: 1.0
