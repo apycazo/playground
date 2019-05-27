@@ -1,0 +1,30 @@
+plugins {
+  id 'java-library'
+  id 'io.franzbecker.gradle-lombok' version '2.0'
+}
+
+dependencies {
+
+  api(
+    "org.slf4j:slf4j-api:${slf4jVersion}",
+    "ch.qos.logback:logback-core:${logbackVersion}",
+    "ch.qos.logback:logback-classic:${logbackVersion}",
+    // serialization
+    "com.fasterxml.jackson.core:jackson-databind:${jacksonVersion}",
+    "org.yaml:snakeyaml:${snakeYamlVersion}",
+    // spring framework
+    "org.springframework:spring-context:${springVersion}"
+  )
+
+  testImplementation(
+    "org.springframework:spring-test:${springVersion}",
+    "org.junit.jupiter:junit-jupiter-api:${junitVersion}",
+    "org.junit.jupiter:junit-jupiter-engine:${junitVersion}",
+    "org.assertj:assertj-core:${assertjVersion}"
+  )
+
+}
+
+test {
+  useJUnitPlatform()
+}

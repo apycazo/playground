@@ -6,4 +6,5 @@ include 'playground-spring-rest'
 include 'playground-micronaut-rest'
 include 'playground-jersey'
 include 'playground-jerseydemo'
+include 'playground-spring'
 
