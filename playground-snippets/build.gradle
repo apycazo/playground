@@ -5,4 +5,10 @@ plugins {
 
 dependencies {
   implementation testStack, logbackStack, springContext, javax, serializationStack
+  // open feign
+  implementation(
+    "io.github.openfeign:feign-core:$feignVersion",
+    "io.github.openfeign:feign-okhttp:$feignVersion",
+    "io.github.openfeign:feign-jackson:$feignVersion",
+  )
 }
