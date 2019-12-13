@@ -1,5 +1,11 @@
 == Creating a new gradle plugin
 
+[TIP]
+====
+Remember that the plugin implementation needs to include all required imports, even those not really needed from the 
+script it might replace.
+====
+
 === Sources
 
 *build.gradle*
